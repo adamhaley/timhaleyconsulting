@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Style guide | Tim Haley Consulting</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="guide-section">
+      <h1>Tim Haley Consulting style guide</h1>
+      <p>The design tokens and components for the new site. Everything here comes from
+        <code>styles.css</code>; page comps in this folder use only that stylesheet.</p>
+    </header>
+
+    <section class="guide-section" id="colour">
+      <h2>Colour</h2>
+      <div class="swatches">
+        <div class="swatch"><div class="swatch-chip" style="background: var(--color-ink)"></div>--color-ink</div>
+        <div class="swatch"><div class="swatch-chip" style="background: var(--color-muted)"></div>--color-muted</div>
+        <div class="swatch"><div class="swatch-chip" style="background: var(--color-paper)"></div>--color-paper</div>
+        <div class="swatch"><div class="swatch-chip" style="background: var(--color-surface)"></div>--color-surface</div>
+        <div class="swatch"><div class="swatch-chip" style="background: var(--color-accent)"></div>--color-accent</div>
+      </div>
+    </section>
+
+    <section class="guide-section" id="type">
+      <h2>Type</h2>
+      <h1>Heading one</h1>
+      <h2>Heading two</h2>
+      <h3>Heading three</h3>
+      <p style="max-width: var(--measure)">Body text sits at a comfortable measure for reading. This
+        paragraph shows the body size and line height.</p>
+    </section>
+
+    <section class="guide-section" id="components">
+      <h2>Components</h2>
+      <a class="button" href="#components">Button</a>
+    </section>
+  </main>
+</body>
+</html>
