@@ -8,12 +8,51 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container site-header-inner">
+      <a class="wordmark" href="#about">[Tim Haley Consulting]</a>
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
   <main class="container">
-    <header class="guide-section">
+    <section class="hero" id="about">
+      <h1>[Hero heading]</h1>
+      <p>[One line of supporting text]</p>
+      <a class="button" href="#contact">[Button label]</a>
+    </section>
+
+    <section class="services" id="services" aria-label="Services">
+      <div class="services-row">
+        <article class="card">
+          <h2>[Service name]</h2>
+          <p>[One line about this service]</p>
+          <p>[A second line about this service]</p>
+        </article>
+        <article class="card">
+          <h2>[Service name]</h2>
+          <p>[One line about this service]</p>
+          <p>[A second line about this service]</p>
+        </article>
+        <article class="card">
+          <h2>[Service name]</h2>
+          <p>[One line about this service]</p>
+          <p>[A second line about this service]</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="guide-section">
       <h1>Tim Haley Consulting style guide</h1>
       <p>The design tokens and components for the new site. Everything here comes from
         <code>styles.css</code>; page comps in this folder use only that stylesheet.</p>
-    </header>
+    </div>
 
     <section class="guide-section" id="colour">
       <h2>Colour</h2>
@@ -40,5 +79,11 @@
       <a class="button" href="#components">Button</a>
     </section>
   </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <p>[Contact line]</p>
+    </div>
+  </footer>
 </body>
 </html>
