@@ -8,103 +8,209 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container site-header-inner">
-      <a class="wordmark" href="#about">[Tim Haley Consulting]</a>
-      <nav aria-label="Main">
-        <ul class="nav-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero" id="about">
-      <div class="container">
-        <h1>[Hero heading]</h1>
-        <p>[One line of supporting text]</p>
-        <a class="button" href="#contact">[Button label]</a>
-      </div>
-    </section>
-
-    <div class="container">
-
-    <section class="services" id="services" aria-label="Services">
-      <div class="services-row">
-        <article class="card">
-          <h2>[Service name]</h2>
-          <p>[One line about this service]</p>
-          <p>[A second line about this service]</p>
-        </article>
-        <article class="card">
-          <h2>[Service name]</h2>
-          <p>[One line about this service]</p>
-          <p>[A second line about this service]</p>
-        </article>
-        <article class="card">
-          <h2>[Service name]</h2>
-          <p>[One line about this service]</p>
-          <p>[A second line about this service]</p>
-        </article>
-      </div>
-    </section>
-
-    <div class="guide-section">
+  <main class="container">
+    <div class="guide-intro">
+      <span class="guide-label">Design system</span>
       <h1>Tim Haley Consulting style guide</h1>
       <p>The design tokens and components for the new site. Everything here comes from
-        <code>styles.css</code>; page comps in this folder use only that stylesheet.</p>
+        <code>styles.css</code>, and page comps in this folder use only that stylesheet. See the
+        components assembled in the <a href="home.html">home page comp</a>.</p>
     </div>
 
     <section class="guide-section" id="colour">
       <h2>Colour</h2>
       <div class="swatches">
-        <div class="swatch"><div class="swatch-chip" style="background: var(--color-ink)"></div>--color-ink</div>
-        <div class="swatch"><div class="swatch-chip" style="background: var(--color-muted)"></div>--color-muted</div>
-        <div class="swatch"><div class="swatch-chip" style="background: var(--color-paper)"></div>--color-paper</div>
-        <div class="swatch"><div class="swatch-chip" style="background: var(--color-surface)"></div>--color-surface</div>
-        <div class="swatch"><div class="swatch-chip" style="background: var(--color-accent)"></div>--color-accent</div>
-        <div class="swatch"><div class="swatch-chip" style="background: var(--color-accent-ink)"></div>--color-accent-ink</div>
-        <div class="swatch"><div class="swatch-chip" style="background: var(--color-accent-hover)"></div>--color-accent-hover</div>
-        <div class="swatch"><div class="swatch-chip" style="background: var(--color-brand)"></div>--color-brand</div>
-        <div class="swatch"><div class="swatch-chip" style="background: var(--color-brand-soft)"></div>--color-brand-soft</div>
-        <div class="swatch"><div class="swatch-chip" style="background: var(--color-brand-ink)"></div>--color-brand-ink</div>
-        <div class="swatch"><div class="swatch-chip" style="background: var(--color-highlight)"></div>--color-highlight</div>
+        <div class="swatch"><div class="swatch-chip" style="background: var(--color-ink)"></div><code>--color-ink</code><br>#14233a</div>
+        <div class="swatch"><div class="swatch-chip" style="background: var(--color-muted)"></div><code>--color-muted</code><br>#4c5869</div>
+        <div class="swatch"><div class="swatch-chip" style="background: var(--color-paper)"></div><code>--color-paper</code><br>#faf7f2</div>
+        <div class="swatch"><div class="swatch-chip" style="background: var(--color-surface)"></div><code>--color-surface</code><br>#f2ebe0</div>
+        <div class="swatch"><div class="swatch-chip" style="background: var(--color-rule)"></div><code>--color-rule</code><br>#dcd2c3</div>
+        <div class="swatch"><div class="swatch-chip" style="background: var(--color-accent)"></div><code>--color-accent</code><br>#1d4a73</div>
+        <div class="swatch"><div class="swatch-chip" style="background: var(--color-accent-ink)"></div><code>--color-accent-ink</code><br>#ffffff</div>
+        <div class="swatch"><div class="swatch-chip" style="background: var(--color-accent-hover)"></div><code>--color-accent-hover</code><br>#123657</div>
+        <div class="swatch"><div class="swatch-chip" style="background: var(--color-brand)"></div><code>--color-brand</code><br>#12233a</div>
+        <div class="swatch"><div class="swatch-chip" style="background: var(--color-brand-soft)"></div><code>--color-brand-soft</code><br>#183352</div>
+        <div class="swatch"><div class="swatch-chip" style="background: var(--color-brand-ink)"></div><code>--color-brand-ink</code><br>#f8f3eb</div>
+        <div class="swatch"><div class="swatch-chip" style="background: var(--color-highlight)"></div><code>--color-highlight</code><br>#c4672c</div>
       </div>
       <p class="palette-note">The palette pairs deep steel navy with warm off-white paper to feel
         steady and technical but approachable, and a copper highlight hints at heat treatment.
-        Approved text pairs, all WCAG AA or better: <code>--color-ink</code> and
-        <code>--color-muted</code> on <code>--color-paper</code> or <code>--color-surface</code>;
-        <code>--color-accent</code> (links) on paper or surface; <code>--color-accent-ink</code> on
-        <code>--color-accent</code> or <code>--color-accent-hover</code>; and
-        <code>--color-brand-ink</code> on <code>--color-brand</code> or the brand gradient (and the
-        reverse, for the hero button). Keep <code>--color-highlight</code> for rules, borders, hover
-        marks and focus outlines only, never for text: it meets 3:1 on paper, surface and brand,
-        not 4.5:1.</p>
+        Approved text pairs, all WCAG AA or better: <code>--color-ink</code> (14.8:1 and 13.3:1)
+        and <code>--color-muted</code> (6.8:1 and 6.1:1) on <code>--color-paper</code> or
+        <code>--color-surface</code>; <code>--color-accent</code> (links, 8.6:1 and 7.8:1) on paper
+        or surface; <code>--color-accent-ink</code> on <code>--color-accent</code> (9.2:1) or
+        <code>--color-accent-hover</code> (12.4:1); and <code>--color-brand-ink</code> on
+        <code>--color-brand</code> (14.3:1), <code>--color-brand-soft</code> (11.6:1) or anywhere
+        on the hero band, gradient and copper glow included (8:1 at its warmest). The hero button
+        reverses the pair: <code>--color-brand</code> on brand-ink (14.3:1), or on surface when
+        hovered (13.4:1). Keep <code>--color-rule</code> for hairlines and
+        <code>--color-highlight</code> for rules, borders, hover marks and focus outlines only,
+        never for text: the copper meets 3:1 on paper, surface, brand and brand-soft, not 4.5:1.
+        On the hero, focus outlines switch to brand-ink because the glow lowers the copper's
+        contrast.</p>
     </section>
 
     <section class="guide-section" id="type">
-      <h2>Type</h2>
-      <h1>Heading one</h1>
-      <h2>Heading two</h2>
-      <h3>Heading three</h3>
-      <p style="max-width: var(--measure)">Body text sits at a comfortable measure for reading. This
-        paragraph shows the body size and line height.</p>
+      <h2>Typography</h2>
+      <p>Headings are set in <strong>Source Serif 4</strong> (semibold 600, bold 700 for page
+        titles), a sturdy, warm serif that reads as considered and authoritative. Body text and
+        interface labels are set in <strong>IBM Plex Sans</strong> (regular 400, medium 500,
+        semibold 600), a plain-spoken sans with an engineered feel. Both load from Google Fonts
+        and fall back to Georgia and the system sans. Headings use a tight 1.15 line height and
+        slightly negative letter spacing (−0.015em, −0.025em for display sizes); body text uses a
+        1.65 line height at a 66-character measure.</p>
+      <dl class="type-specimen">
+        <div class="type-sample">
+          <dt class="guide-label"><code>--text-3xl</code> · hero heading</dt>
+          <dd class="font-heading text-3xl">Thermal process consulting</dd>
+        </div>
+        <div class="type-sample">
+          <dt class="guide-label"><code>--text-2xl</code> · h1</dt>
+          <dd class="font-heading text-2xl">Thermal process consulting</dd>
+        </div>
+        <div class="type-sample">
+          <dt class="guide-label"><code>--text-xl</code> · h2</dt>
+          <dd class="font-heading text-xl">Thermal process consulting</dd>
+        </div>
+        <div class="type-sample">
+          <dt class="guide-label"><code>--text-lg</code> · h3, lead text</dt>
+          <dd class="font-heading text-lg">Thermal process consulting</dd>
+        </div>
+        <div class="type-sample">
+          <dt class="guide-label"><code>--text-base</code> · body</dt>
+          <dd class="text-base">Thermal process consulting for food manufacturers</dd>
+        </div>
+        <div class="type-sample">
+          <dt class="guide-label"><code>--text-sm</code> · nav, footer</dt>
+          <dd class="text-sm">Thermal process consulting for food manufacturers</dd>
+        </div>
+        <div class="type-sample">
+          <dt class="guide-label"><code>--text-xs</code> · labels, captions</dt>
+          <dd class="text-xs">Thermal process consulting for food manufacturers</dd>
+        </div>
+      </dl>
+      <h3>Body text at the measure</h3>
+      <p>Body text sits at a comfortable measure for reading, about 66 characters per line, so
+        longer service descriptions stay easy to follow. This paragraph shows the body size,
+        weight and line height that every page uses.</p>
+    </section>
+
+    <section class="guide-section" id="spacing">
+      <h2>Spacing</h2>
+      <p class="guide-note">A 4px base. Small steps space text and controls; large steps separate
+        blocks. Major sections use <code>--section-space</code>, which grows from 48px on phones
+        to 96px on wide screens.</p>
+      <ul class="spacing-scale">
+        <li class="spacing-step"><span><code>--space-1</code> 4px</span><span class="spacing-bar s1"></span></li>
+        <li class="spacing-step"><span><code>--space-2</code> 8px</span><span class="spacing-bar s2"></span></li>
+        <li class="spacing-step"><span><code>--space-3</code> 12px</span><span class="spacing-bar s3"></span></li>
+        <li class="spacing-step"><span><code>--space-4</code> 16px</span><span class="spacing-bar s4"></span></li>
+        <li class="spacing-step"><span><code>--space-5</code> 24px</span><span class="spacing-bar s5"></span></li>
+        <li class="spacing-step"><span><code>--space-6</code> 32px</span><span class="spacing-bar s6"></span></li>
+        <li class="spacing-step"><span><code>--space-7</code> 48px</span><span class="spacing-bar s7"></span></li>
+        <li class="spacing-step"><span><code>--space-8</code> 64px</span><span class="spacing-bar s8"></span></li>
+        <li class="spacing-step"><span><code>--space-9</code> 96px</span><span class="spacing-bar s9"></span></li>
+        <li class="spacing-step"><span><code>--section-space</code></span><span class="spacing-bar section"></span></li>
+      </ul>
+    </section>
+
+    <section class="guide-section" id="treatment">
+      <h2>Graphical treatment</h2>
+      <p class="guide-note">Quiet and precise: soft 8px corners, hairline rules in a warm grey,
+        navy-tinted shadows that lift cards only slightly, and one copper accent per element (a
+        top rule, an underline or a focus ring). The brand band carries the only decoration: a
+        low copper glow in its top corner with faint concentric rings, like isotherms radiating
+        from a heat source.</p>
+
+      <h3>Radius</h3>
+      <div class="treatment-grid">
+        <div><span class="guide-label"><code>--radius-sm</code> 4px · code, focus ring</span><div class="treatment-tile radius-sm"></div></div>
+        <div><span class="guide-label"><code>--radius</code> 8px · buttons, cards</span><div class="treatment-tile radius"></div></div>
+        <div><span class="guide-label"><code>--radius-pill</code> · reserved for tags</span><div class="treatment-tile radius-pill"></div></div>
+      </div>
+
+      <h3>Rules</h3>
+      <div class="treatment-grid">
+        <div><span class="guide-label"><code>--rule-hairline</code> in <code>--color-rule</code></span><div class="treatment-tile rule-hairline"></div></div>
+        <div><span class="guide-label"><code>--rule-highlight</code> in <code>--color-highlight</code></span><div class="treatment-tile rule-highlight"></div></div>
+      </div>
+
+      <h3>Shadows</h3>
+      <div class="treatment-grid">
+        <div><span class="guide-label"><code>--shadow-button</code></span><div class="treatment-tile shadow-button"></div></div>
+        <div><span class="guide-label"><code>--shadow-card</code></span><div class="treatment-tile shadow-card"></div></div>
+        <div><span class="guide-label"><code>--shadow-card-hover</code></span><div class="treatment-tile shadow-card-hover"></div></div>
+      </div>
+
+      <h3>Gradient and motif</h3>
+      <div class="treatment-grid">
+        <div><span class="guide-label"><code>--gradient-brand</code></span><div class="treatment-tile gradient-brand"></div></div>
+        <div class="treatment-wide"><span class="guide-label"><code>--motif-isotherm</code> + <code>--gradient-glow</code> + <code>--gradient-brand</code> · the hero band</span><div class="treatment-tile gradient-hero"></div></div>
+      </div>
     </section>
 
     <section class="guide-section" id="components">
       <h2>Components</h2>
-      <a class="button" href="#components">Button</a>
-    </section>
-    </div>
-  </main>
+      <p class="guide-note">Each component appears once here, with the same markup the
+        <a href="home.html">home page comp</a> uses.</p>
 
-  <footer class="site-footer" id="contact">
-    <div class="container">
-      <p>[Contact line]</p>
-    </div>
-  </footer>
+      <h3>Button</h3>
+      <div class="guide-example">
+        <a class="button" href="#components">[Button label]</a>
+      </div>
+      <p class="guide-note">Accent fill with a copper underline on hover. On the hero band it
+        inverts to brand-ink, as shown in the hero below.</p>
+
+      <h3>Link</h3>
+      <p class="guide-example">Inline links are accent with a hairline underline that thickens and
+        turns copper on hover: <a href="#components">[Link text]</a>. Every focusable element gets
+        a 3px copper focus ring.</p>
+
+      <h3>Card</h3>
+      <div class="guide-example services-row">
+        <article class="card">
+          <h2>[Service name]</h2>
+          <p>[One line about this service]</p>
+          <p>[A second line about this service]</p>
+        </article>
+      </div>
+
+      <h3>Header and nav</h3>
+      <div class="guide-bleed">
+        <header class="site-header">
+          <div class="container site-header-inner">
+            <a class="wordmark" href="home.html">[Tim Haley Consulting]</a>
+            <nav aria-label="Example">
+              <ul class="nav-list">
+                <li><a href="#components" aria-current="page">About</a></li>
+                <li><a href="#components">Services</a></li>
+                <li><a href="#components">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </div>
+
+      <h3>Hero</h3>
+      <div class="guide-bleed">
+        <section class="hero" aria-label="Hero example">
+          <div class="container">
+            <h1>[Hero heading]</h1>
+            <p>[One line of supporting text]</p>
+            <a class="button" href="#components">[Button label]</a>
+          </div>
+        </section>
+      </div>
+
+      <h3>Footer</h3>
+      <div class="guide-bleed">
+        <footer class="site-footer">
+          <div class="container">
+            <p>[Contact line]</p>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
