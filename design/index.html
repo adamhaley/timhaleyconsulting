@@ -21,12 +21,16 @@
     </div>
   </header>
 
-  <main class="container">
+  <main>
     <section class="hero" id="about">
-      <h1>[Hero heading]</h1>
-      <p>[One line of supporting text]</p>
-      <a class="button" href="#contact">[Button label]</a>
+      <div class="container">
+        <h1>[Hero heading]</h1>
+        <p>[One line of supporting text]</p>
+        <a class="button" href="#contact">[Button label]</a>
+      </div>
     </section>
+
+    <div class="container">
 
     <section class="services" id="services" aria-label="Services">
       <div class="services-row">
@@ -62,7 +66,23 @@
         <div class="swatch"><div class="swatch-chip" style="background: var(--color-paper)"></div>--color-paper</div>
         <div class="swatch"><div class="swatch-chip" style="background: var(--color-surface)"></div>--color-surface</div>
         <div class="swatch"><div class="swatch-chip" style="background: var(--color-accent)"></div>--color-accent</div>
+        <div class="swatch"><div class="swatch-chip" style="background: var(--color-accent-ink)"></div>--color-accent-ink</div>
+        <div class="swatch"><div class="swatch-chip" style="background: var(--color-accent-hover)"></div>--color-accent-hover</div>
+        <div class="swatch"><div class="swatch-chip" style="background: var(--color-brand)"></div>--color-brand</div>
+        <div class="swatch"><div class="swatch-chip" style="background: var(--color-brand-soft)"></div>--color-brand-soft</div>
+        <div class="swatch"><div class="swatch-chip" style="background: var(--color-brand-ink)"></div>--color-brand-ink</div>
+        <div class="swatch"><div class="swatch-chip" style="background: var(--color-highlight)"></div>--color-highlight</div>
       </div>
+      <p class="palette-note">The palette pairs deep steel navy with warm off-white paper to feel
+        steady and technical but approachable, and a copper highlight hints at heat treatment.
+        Approved text pairs, all WCAG AA or better: <code>--color-ink</code> and
+        <code>--color-muted</code> on <code>--color-paper</code> or <code>--color-surface</code>;
+        <code>--color-accent</code> (links) on paper or surface; <code>--color-accent-ink</code> on
+        <code>--color-accent</code> or <code>--color-accent-hover</code>; and
+        <code>--color-brand-ink</code> on <code>--color-brand</code> or the brand gradient (and the
+        reverse, for the hero button). Keep <code>--color-highlight</code> for rules, borders, hover
+        marks and focus outlines only, never for text: it meets 3:1 on paper, surface and brand,
+        not 4.5:1.</p>
     </section>
 
     <section class="guide-section" id="type">
@@ -78,6 +98,7 @@
       <h2>Components</h2>
       <a class="button" href="#components">Button</a>
     </section>
+    </div>
   </main>
 
   <footer class="site-footer" id="contact">
